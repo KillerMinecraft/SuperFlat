@@ -42,7 +42,7 @@ public class Plugin extends WorldOptionPlugin
 			optionMap.put("Snowy Kingdom", "2;7,59x1,3x3,2,78;12;biome_1,village");
 			optionMap.put("Bottomless Pit", "2;2x4,3x3,2;1;biome_1,village");
 			optionMap.put("Desert", "2;7,3x1,52x24,8x12;2;stronghold,biome_1,village,decoration,dungeon,mineshaft");
-			optionMap.put("Readstone Ready", "2;7,3x1,52x24;2");
+			optionMap.put("Redstone Ready", "2;7,3x1,52x24;2");
 			
 			getConfig().createSection("worlds", optionMap);
 			saveConfig();
