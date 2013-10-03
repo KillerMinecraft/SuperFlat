@@ -1,25 +1,32 @@
-package com.ftwinston.Killer.SuperFlat;
+package com.ftwinston.KillerMinecraft.Modules.SuperFlat;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 
-import com.ftwinston.Killer.Killer;
-import com.ftwinston.Killer.WorldOption;
-import com.ftwinston.Killer.WorldOptionPlugin;
+import com.ftwinston.KillerMinecraft.WorldGenerator;
+import com.ftwinston.KillerMinecraft.WorldGeneratorPlugin;
 
-public class Plugin extends WorldOptionPlugin
+public class Plugin extends WorldGeneratorPlugin
 {
+	@Override
+	public String[] getDescriptionText() { return new String[] {"Using a super-flat world."}; }
+	
+	@Override
+	public Material getMenuIcon() { return Material.SNOW; }
+	
+	@Override
 	public void onEnable()
 	{
 		loadOptions();
-		Killer.registerWorldOption(this);
+		super.onEnable();
 	}
 	
 	@Override
-	public WorldOption createInstance()
+	public WorldGenerator createInstance()
 	{
 		return new SuperFlat();
 	}
