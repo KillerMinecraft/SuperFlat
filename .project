@@ -3,6 +3,7 @@
 	<name>SuperFlat</name>
 	<comment></comment>
 	<projects>
+		<project>killer</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
