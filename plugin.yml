@@ -1,6 +1,6 @@
 name: SuperFlat
 main: com.ftwinston.KillerMinecraft.Modules.SuperFlat.Plugin
-depend: [Killer Minecraft]
+depend: [Killer_Minecraft]
 version: 1
 load: STARTUP
 description: A world generator for Killer Minecraft
