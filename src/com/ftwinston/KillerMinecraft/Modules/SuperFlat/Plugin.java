@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.bukkit.Material;
+import org.bukkit.World.Environment;
 import org.bukkit.configuration.ConfigurationSection;
 
 import com.ftwinston.KillerMinecraft.WorldGenerator;
@@ -12,6 +13,9 @@ import com.ftwinston.KillerMinecraft.WorldGeneratorPlugin;
 
 public class Plugin extends WorldGeneratorPlugin
 {
+	@Override
+	public Environment getWorldType() { return Environment.NORMAL; }
+	
 	@Override
 	public String[] getDescriptionText() { return new String[] {"Using a super-flat world."}; }
 	
